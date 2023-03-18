@@ -1,8 +1,8 @@
 const container = document.getElementById('container-id');
-console.log(container);
+//console.log(container);
 //formulário
 const formBlock = document.getElementById('form-block');
-console.log(formBlock);
+//console.log(formBlock);
 //Seleciona input: primeiro número;
 const numeroA = document.getElementById('numero-a');
 ////Seleciona input: segundo número;
@@ -18,19 +18,19 @@ function comparisonValidation(numeroA, numeroB) {
     return b > a;
 }
 
-console.log(comparisonValidation(2, 1));
+////console.log(comparisonValidation(2, 1));
 
-console.log(comparisonValidation(2, 5));
+//console.log(comparisonValidation(2, 5));
 
 const mensagemDeSucesso = document.querySelector('.success-message');
-console.log(mensagemDeSucesso);
+//console.log(mensagemDeSucesso);
 
 const mensagemDeErro = document.querySelector('.error-message');
-console.log(mensagemDeErro);
+//console.log(mensagemDeErro);
 
 container.addEventListener('click', function(e) {
     e.target.value;
-    console.log(e.target.value);
+    //console.log(e.target.value);
 
     mensagemDeErro.style.display = 'none';
     mensagemDeSucesso.style.display = 'none';
@@ -41,7 +41,7 @@ formBlock.addEventListener('submit', function(e) {
     e.preventDefault();
 
     comparision = comparisonValidation(numeroA, numeroB);
-    console.log(comparision);
+    //console.log(comparision);
 
 
     if(comparision) {
@@ -62,7 +62,7 @@ formBlock.addEventListener('submit', function(e) {
 
 numeroA.addEventListener('click', function(e) {
     e.target.value;
-    console.log(e.target.value);
+    //console.log(e.target.value);
 
     mensagemDeErro.style.display = 'none';
     mensagemDeSucesso.style.display = 'none';
@@ -70,7 +70,7 @@ numeroA.addEventListener('click', function(e) {
 
 numeroB.addEventListener('click', function(e) {
     e.target.value;
-    console.log(e.target.value);
+    //console.log(e.target.value);
 })
 
 
